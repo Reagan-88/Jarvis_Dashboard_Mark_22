@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jarvis Dashboard (Mark 22)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="dashboard">
+    <div id="status-bar">
+      <div class="status-widget" id="dnd-status">DND: OFF</div>
+      <div class="status-widget" id="jarvis-status">Jarvis Mode: OFF</div>
+      <div class="mark-label">Mark 22</div>
+    </div>
+
+    <div id="main">
+      <div id="ai-widgets">
+        <button onclick="launchAlexa()">Amazon Alexa</button>
+        <button onclick="launchAmazonMusic()">Amazon Music</button>
+        <button onclick="openChatGPT()">ChatGPT</button>
+        <button onclick="openGauthMath()">GauthMath</button>
+      </div>
+
+      <div id="center-controls">
+        <textarea id="inputField" placeholder="Talk to Jarvis..."></textarea>
+        <button onclick="submitText()">Send</button>
+        <button onclick="activateSpeech()">Talk</button>
+        <button onclick="openCamera()">Camera</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
